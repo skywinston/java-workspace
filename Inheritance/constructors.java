@@ -1,7 +1,7 @@
 class TwoDimensionalObject {
   protected int width;
   protected int height;
-  TwoDimensionalObject(int width, int height){
+  TwoDimensionalObject(int width, int height){ // This is the constructor.  It has no void, public/private value
     this.width = width;
     this.height = height;
   }
@@ -10,7 +10,7 @@ class TwoDimensionalObject {
 class ThreeDimensionalObject extends TwoDimensionalObject {
   protected int depth;
   ThreeDimensionalObject(int width, int heigh, int depth){
-    super(width, height);
+    super(width, height);  // this will reference the class further up the inheritance chain to set the width and height values
     this.depth = depth;
   }
 }
